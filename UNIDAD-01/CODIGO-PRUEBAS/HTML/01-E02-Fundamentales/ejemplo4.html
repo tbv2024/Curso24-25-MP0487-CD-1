@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- EJEMPLO 2: RECORRIDO POR TODAS LAS ETIQUETAS HTML - parte 1 -->
+
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<meta name="author" content="IES de Rodeira, DAW">
+    <meta name="description" content="Este ejemplo número 2, muestra muchas de las principales etiquetas HTML">
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- Estas no las vamos a utizar para esta explicación,
+	     pero las dejo para que te "suenen"
+		
+	<link rel="icon" type="image/png" href="favicon.png">
+	
+	<link rel="stylesheet" href="estilos4.css" /> 
+	<script src="javascript.js" defer></script>
+	
+	-->
+	
+    <title>..:Ejemplo 02: 4):..</title>
+
+  </head>
+  
+  <body>
+	<h1>EJEMPLO 02: 4)</h1>
+	<h2 style="color: magenta">4) Estructura del documento y sitio web - Web semántica:</h2>	
+
+	
+
+    <!-- Aquí está nuestro encabezado principal que se utiliza en todas las páginas de nuestro sitio web -->
+
+    <header>
+      <h1>Encabezado</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Nuestro equipo</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+
+      <!-- Un formulario de búsqueda es otra forma no lineal común de navegar por un sitio web. -->
+
+      <form>
+        <input type="search" name="q" placeholder="Consulta de búsqueda">
+        <input type="submit" value="¡Ir!">
+      </form>
+    </nav>
+
+    <!-- Aquí está el contenido principal de nuestra página -->
+    <main>
+
+      <!-- Contiene un artículo -->
+      <article>
+        <h2>Encabezado del artículo</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br/>
+		   Donec a diam lectus. <br/>
+		   Establecer sentarse amet ipsum mauris. <br/>
+		   Mecenas congue ligula as quam viverra nec consectetur ant hendrerit. <br/>
+		   Donec et mollis dolor. <br/>
+		   Praesent et diam eget libero egestas mattis sit amet vitae augue. <br/>
+		   Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+
+		<section  class="subseccion" id="subseccion1">
+			<h3>subsección</h3>
+
+			<p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
+
+			<p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Done sed odio eros.</p>
+		</section>
+
+		<section  class="subseccion" id="subseccion2">
+			<h3>Otra subsección</h3>
+
+			<p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies.<span style="color: blue"> Mauris vitae nisi at </span>sem facilisis semper ac in est.</p>
+		</section>
+		
+		<div class="enfasis" style="color: red; background-color: aquamarine">
+			<p>Vivamus fermentum sempre porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Mecenas convallis ullamcorper ultricificado. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
+		</div>
+      </article>
+
+      <!-- el contenido aparte también se puede anidar dentro del contenido principal -->
+      <aside>
+        <h2>Relacionado</h2>
+
+        <ul>
+          <li><a href="#">Oh, me gusta estar al lado del mar</a></li>
+          <li><a href="#">Oh, me gusta estar junto al mar</a></li>
+          <li><a href="#">Aunque en el norte de Inglaterra</a></li>
+          <li><a href="#">Nunca deja de llover</a></li>
+          <li><a href="#">Bueno...</a></li>
+        </ul>
+      </aside>
+
+    </main>
+
+    <!-- Y aquí está nuestro pie de página principal que se utiliza en todas las páginas de nuestro sitio web -->
+
+    <footer>
+      <p>©Copyright 2050 por nadie. Todos los derechos invertidos.</p>
+    </footer>
+
+
+
+  </body>
+</html>

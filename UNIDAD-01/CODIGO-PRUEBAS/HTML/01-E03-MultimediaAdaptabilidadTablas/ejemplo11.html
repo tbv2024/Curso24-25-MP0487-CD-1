@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- EJEMPLO 2: RECORRIDO POR TODAS LAS ETIQUETAS HTML - parte 2 -->
+
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<meta name="author" content="IES de Rodeira, DAW">
+    <meta name="description" content="Este ejemplo número 2, muestra muchas de las principales etiquetas HTML">
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- Estas no las vamos a utizar para esta explicación,
+	     pero las dejo para que te "suenen"
+		
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="/estilos/estilos11.css" /> 
+
+	<script src="javascript.js" defer></script>
+	
+	-->
+	<link rel="stylesheet" href="/estilos/estilos11.css" /> 
+
+    <title>..:Ejemplo 02: 11):..</title>
+
+  </head>
+  
+  <body>
+	<h1>EJEMPLO 02: 11)</h1>
+	<h2 style="color: slateblue">11) Tablas:</h2>	
+
+	<br><br>
+	<h3> a) Elementos básicos </h3>
+	<hr/>
+	<table>
+      <colgroup>
+        <col span="2">
+        <col style="background-color:#97DB9A;">
+        <col style="width:42px;">
+        <col style="background-color:#97DB9A;">
+        <col style="background-color:#DCC48E; border:4px solid #C1437A;">
+        <col span="2" style="width:42px;">
+      </colgroup>
+      <tr>
+        <td>&nbsp;</td>
+        <th>lunes</th>
+        <th>martes</th>
+        <th>miércoles</th>
+        <th>jueves</th>
+        <th>vie</th>
+        <th>sábado</th>
+        <th>Sol</th>
+      </tr>
+      <tr>
+        <th>1er período</th>
+        <td>Inglés</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>alemán</td>
+        <td>Holandés</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>Segundo período</th>
+        <td>Inglés</td>
+        <td>Inglés</td>
+        <td>&nbsp;</td>
+        <td>alemán</td>
+        <td>Holandés</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>3er período</th>
+        <td>&nbsp;</td>
+        <td>alemán</td>
+        <td>&nbsp;</td>
+        <td>alemán</td>
+        <td>Holandés</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>4to período</th>
+        <td>&nbsp;</td>
+        <td>Inglés</td>
+        <td>&nbsp;</td>
+        <td>Inglés</td>
+        <td>Holandés</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+
+
+	<!-- Otro ejemplo más completo -->
+	<br><br>
+	<h3>b) Características avanzadas y accesibilidad </h3>
+	<hr/>
+
+
+	<table>
+      <caption>Datos sobre los planetas de nuestro sistema solar (datos planetarios tomados de <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">Hoja de datos planetarios de la NASA - Métrica</a>) .</título>
+      <colgroup>
+        <col span="2">
+        <col style="border: 2px solid black">
+        <col span="9">
+      </colgroup>
+	  
+      <thead>
+        <tr>
+          <td class="tabla2" colspan="2"></td>
+          <th scope="col">Nombre</th>
+          <th scope="col">Masa (10<sup>24</sup>kg)</th>
+          <th scope="col">Diámetro (km)</th>
+          <th scope="col">Densidad (kg/m<sup>3</sup>)</th>
+          <th scope="col">Gravedad (m/s<sup>2</sup>)</th>
+          <th scope="col">Duración del día (horas)</th>
+          <th scope="col">Distancia al Sol (10<sup>6</sup>km)</th>
+          <th scope="col">Temperatura media (°C)</th>
+          <th scope="col">Número de lunas</th>
+          <th scope="col">Notas</th>
+        </tr>
+      </thead>
+	  
+      <tbody>
+        <tr>
+          <th rowspan="4" colspan="2" scope="rowgroup">Planetas terrestres</th>
+          <th scope="row">Mercurio</th>
+          <td class="tabla2">0,330</td>
+          <td class="tabla2">4879</td>
+          <td class="tabla2">5427</td>
+          <td class="tabla2">3.7</td>
+          <td class="tabla2">4222.6</td>
+          <td class="tabla2">57,9</td>
+          <td class="tabla2">167</td>
+          <td class="tabla2">0</td>
+          <td class="tabla2">Más cercano al Sol</td>
+        </tr>
+        <tr>
+          <th scope="row">Venus</th>
+          <td class="tabla2">4,87</td>
+          <td class="tabla2">12.104</td>
+          <td class="tabla2">5243</td>
+          <td class="tabla2">8.9</td>
+          <td class="tabla2">2802.0</td>
+          <td class="tabla2">108,2</td>
+          <td class="tabla2">464</td>
+          <td class="tabla2">0</td>
+          <td class="tabla2"></td>
+        </tr>
+        <tr>
+          <th scope="row">Tierra</th>
+          <td class="tabla2">5,97</td>
+          <td class="tabla2">12.756</td>
+          <td class="tabla2">5514</td>
+          <td class="tabla2">9.8</td>
+          <td class="tabla2">24,0</td>
+          <td class="tabla2">149,6</td>
+          <td class="tabla2">15</td>
+          <td class="tabla2">1</td>
+          <td class="tabla2">Nuestro mundo</td>
+        </tr>
+        <tr>
+          <th scope="row">Marte</th>
+          <td class="tabla2">0,642</td>
+          <td class="tabla2">6792</td>
+          <td class="tabla2">3933</td>
+          <td class="tabla2">3.7</td>
+          <td class="tabla2">24,7</td>
+          <td class="tabla2">227,9</td>
+          <td class="tabla2">-65</td>
+          <td class="tabla2">2</td>
+          <td class="tabla2">El planeta rojo</td>
+        </tr>
+        <tr>
+          <th rowspan="4" scope="rowgroup">Planetas jovianos</th>
+          <th rowspan="2" scope="rowgroup">Gigantes gaseosos</th>
+          <th scope="row">Júpiter</th>
+          <td class="tabla2">1898</td>
+          <td class="tabla2">142.984</td>
+          <td class="tabla2">1326</td>
+          <td class="tabla2">23.1</td>
+          <td class="tabla2">9.9</td>
+          <td class="tabla2">778,6</td>
+          <td class="tabla2">-110</td>
+          <td class="tabla2">67</td>
+          <td class="tabla2">El planeta más grande</td>
+        </tr>
+        <tr>
+          <th scope="row">Saturno</th>
+          <td class="tabla2">568</td>
+          <td class="tabla2">120.536</td>
+          <td class="tabla2">687</td>
+          <td class="tabla2">9.0</td>
+          <td class="tabla2">10.7</td>
+          <td class="tabla2">1433.5</td>
+          <td class="tabla2">-140</td>
+          <td class="tabla2">62</td>
+          <td class="tabla2"></td>
+        </tr>
+        <tr>
+          <th rowspan="2" scope="rowgroup">Gigantes de hielo</th>
+          <th scope="row">Urano</th>
+          <td class="tabla2">86,8</td>
+          <td class="tabla2">51.118</td>
+          <td class="tabla2">1271</td>
+          <td class="tabla2">8.7</td>
+          <td class="tabla2">17.2</td>
+          <td class="tabla2">2872.5</td>
+          <td class="tabla2">-195</td>
+          <td class="tabla2">27</td>
+          <td class="tabla2"></td>
+        </tr>
+        <tr>
+          <th scope="row">Neptuno</th>
+          <td class="tabla2">102</td>
+          <td class="tabla2">49.528</td>
+          <td class="tabla2">1638</td>
+          <td class="tabla2">11.0</td>
+          <td class="tabla2">16.1</td>
+          <td class="tabla2">4495.1</td>
+          <td class="tabla2">-200</td>
+          <td class="tabla2">14</td>
+          <td class="tabla2"></td>
+        </tr>
+        <tr>
+          <th colspan="2" scope="row">Planetas enanos</th>
+          <th scope="fila">Plutón</th>
+          <td class="tabla2">0,0146</td>
+          <td class="tabla2">2370</td>
+          <td class="tabla2">2095</td>
+          <td class="tabla2">0.7</td>
+          <td class="tabla2">153,3</td>
+          <td class="tabla2">5906.4</td>
+          <td class="tabla2">-225</td>
+          <td class="tabla2">5</td>
+          <td class="tabla2">Desclasificado como planeta en 2006, pero esto <a href="https://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">permanece controvertido</a>.</td>
+        </tr>
+      </tbody>
+    </table>
+	
+  </body>
+</html>

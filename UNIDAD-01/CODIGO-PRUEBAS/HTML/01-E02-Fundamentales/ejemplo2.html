@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- EJEMPLO 2: RECORRIDO POR TODAS LAS ETIQUETAS HTML - parte 1 -->
+
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<meta name="author" content="IES de Rodeira, DAW">
+    <meta name="description" content="Este ejemplo número 2, muestra muchas de las principales etiquetas HTML">
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- Estas no las vamos a utizar para esta explicación,
+	     pero las dejo para que te "suenen"
+		
+	<link rel="icon" type="image/png" href="favicon.png">
+	
+	<link rel="stylesheet" href="estilos2.css" /> 
+	<script src="javascript.js" defer></script>
+	
+	-->
+	
+    <title>..:Ejemplo 02: 2):..</title>
+
+  </head>
+  
+  <body>
+	<h1>EJEMPLO 02: 2)</h1>
+	<h2 style="color: green" id="id_cabecera">2) Hiperenlaces:</h2>	
+	
+	<!-- Enlaces relativos -->
+	<p> <a href="carpeta1/pagina1.html" title="Haz click para ir a página 1, por favor">Ir a página 1, en carpeta1 </a> </p>
+	<p> <a href="carpeta2/pagina2.html">Ir a página 2, en carpeta2 </a> </p>
+	<p> <a href="carpeta1/carpeta1-1/pagina1-1.html">Ir a página 1-1, en carpeta1\carpeta1-1 </a> </p>
+
+	<p> <a href="carpeta1/carpeta1-1/../../carpeta1/pagina1.html">Ir a página 1, en carpeta1 </a> </p>
+
+	<!-- Enlace absoluto -->
+	<p> <a href="https://www.edu.xunta.gal/fpadistancia" target="_blank">FP a distancia </a> </p>
+
+	<!-- Enlace a fragmento -->
+	<p> <a href="#id_cabecera">Ir a cabecera de página </a> </p>
+	<p> <a href="#id_seccion1">Ir a sección 1 </a> </p>
+	<p> <a href="#id_seccion2">Ir a sección 2 </a> </p>
+
+	<!-- Enlace tipo email -->
+	<p>
+		<a href="mailto:admin@iesrodeira.gal?cc=usuario@iesrodeira.gal&bcc=usuario@iesrodeira.gal&subject=Hola%20Mundo!!&body=Este%20es%20mi%20primer%20correo">Enviar correo electrónico con CC, BCC, </a>
+	</p>
+
+	<!-- Imagen con enlace -->
+	<p>
+	<a href="https://www.w3.org/TR/2011/WD-html-markup-20110113/syntax.html">  
+	   <img src="carpeta1/html.png" alt="Especificación HTML" width="50" />
+	</a>
+	</p>
+
+	<br><br>
+	<h3 id="id_seccion1">Sección 1  </h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas non dolor vel laoreet. Aenean at viverra metus. Donec ullamcorper eleifend nulla, non iaculis nunc tristique eget. Mauris a odio quis nisl elementum feugiat nec vel nibh. Mauris porttitor turpis ut sapien auctor, ac pretium nunc convallis. Vestibulum sit amet aliquet velit, a ornare mi. Praesent aliquam leo lorem, quis rutrum nisl tincidunt et. Aenean convallis lacinia suscipit.</p>
+
+	<p>In interdum, arcu fermentum interdum porttitor, leo risus lacinia mi, id volutpat augue ante at nisi. Suspendisse lobortis placerat interdum. Vivamus ornare eros non magna semper, quis porta dolor blandit. Mauris fringilla tellus eget nisl laoreet lobortis. Vivamus maximus elementum dui, eu lobortis justo pretium id. Aenean eleifend, nibh non feugiat pretium, dolor justo ornare lectus, non vehicula ipsum ex et massa. Aenean rutrum massa id lorem varius accumsan. Etiam dapibus dictum arcu, ac iaculis lacus pharetra vitae. Duis id ultrices ex. Fusce eget porta lorem. In dictum nec urna eget dapibus.</p>
+
+	<p>Etiam feugiat sollicitudin tellus, sed finibus velit convallis vel. Pellentesque molestie neque sit amet sem pharetra bibendum. In hac habitasse platea dictumst. Duis ultricies quis nisi at mollis. Nunc erat ex, pulvinar sed lacus id, rhoncus tempor nibh. Proin euismod mauris a dui pretium scelerisque. In at gravida lectus. Duis condimentum ac sapien id ornare. Morbi pulvinar tristique dui ut efficitur. Aenean sagittis in enim ut fringilla.</p>
+
+	<p>Nullam posuere accumsan magna, quis blandit tellus convallis non. Cras sed ex sem. Pellentesque ornare elit quis mattis volutpat. Praesent aliquam nisl a elit porttitor viverra. Nulla vitae condimentum nisl, id vehicula ante. Nulla luctus eu leo at sagittis. Integer pretium, elit sed imperdiet gravida, augue felis euismod felis, id mollis lectus justo eu dolor. Proin vitae ligula lobortis, convallis lacus ut, gravida sem.</p>
+	<p> <a href="#id_cabecera">Volver a cabecera</a> </p>
+	
+	<br><br>
+	<h3 id="id_seccion2">Sección 2 </h3>
+	<p> In interdum, arcu fermentum interdum porttitor, leo risus lacinia mi, id volutpat augue ante at nisi. Suspendisse lobortis placerat interdum. Vivamus ornare eros non magna semper, quis porta dolor blandit. Mauris fringilla tellus eget nisl laoreet lobortis. Vivamus maximus elementum dui, eu lobortis justo pretium id. Aenean eleifend, nibh non feugiat pretium, dolor justo ornare lectus, non vehicula ipsum ex et massa. Aenean rutrum massa id lorem varius accumsan. Etiam dapibus dictum arcu, ac iaculis lacus pharetra vitae. Duis id ultrices ex. Fusce eget porta lorem. In dictum nec urna eget dapibus</p>
+	<p> <a href="#id_cabecera">Volver a cabecera</a> </p>
+
+	
+
+
+
+  </body>
+</html>

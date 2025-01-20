@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<meta name="author" content="IES de Rodeira, DAW">
+    <meta name="description" content="Este ejemplo número 4.16, repartido en varios ejemplos que ilustran el uso de formularios HTML">
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- Estas no las vamos a utizar para esta explicación,
+	     pero las dejo para que te "suenen"
+	<link rel="icon" type="image/png" href="favicon.png">
+	<script src="javascript.js" defer></script>
+	-->
+	
+	<!-- 
+	<link rel="stylesheet" href="estilos16.css" /> 
+	-->
+	
+	
+    <title>..:Ejemplo 04: 16):..</title>
+
+  </head>
+  
+  <body>
+	<h1>EJEMPLO 04: 16) </h1>
+
+	<h2 style="color: red">16) Otros elementos de formularios:</h2>
+	<form>
+		<fieldset>
+			<legend>Campos de texto multilínea (cajas de texto)</legend>
+			<p>
+				<label for="id_cajaDeTexto">Describa brevemente su problema:</label>
+				<textarea cols="30" rows="8" id="id_cajaDeTexto" placeholder="escriba aquí..." ></textarea>
+			</p>
+					
+			<p>
+			  <button type="submit">¡Enviar ahora!</button>
+			</p>
+		</fieldset>
+	
+		<br><br>
+		<fieldset>
+			<legend>Listas desplegables</legend>
+			
+			<label for="id_frutas">Frutas que desea: </label>
+			<select id="id_frutas" name="frutas">
+			  <option>Platano</option>
+			  <option selected>Fresa</option>
+			  <option>Ciruela</option>
+			</select>
+				
+			<br><br>
+
+			<label for="id_grupoVegetales">Vegetales que desea: </label>
+			<select id="id_grupoVegetales" name="vegetales">
+			  <optgroup label="Frutas">
+				<option>Platano</option>
+				<option selected>Fresa</option>
+				<option>Ciruela</option>
+			  </optgroup>
+			  <optgroup label="Vegetales">
+				<option>Zanahoria</option>
+				<option>Pepino</option>
+				<option>Patata</option>
+			  </optgroup>
+			</select>
+
+			<br><br>
+
+			<label for="id_simple">Frutas que desea: </label>
+			<select id="id_simple" name="simple">
+			  <option value="platano">Amarilla, dulce y larga</option>
+			  <option value="fresa">Roja, jugosa y dulce</option>
+			  <option value="piña">Picuda, ácida y dulce</option>
+			</select>
+		</fieldset>
+
+		<br><br>
+			
+		<fieldset>
+		  <legend>Cajas de selección múltiple y de autocompetar</legend>
+			<label for="id_multi">Frutas que desea: </label>
+			<select id="id_multi" name="multi" multiple size="4">
+			  <optgroup label="frutas">
+				<option>Naranja</option>
+				<option selected>Limón</option>
+				<option>Sandía</option>
+			  </optgroup>
+			  <optgroup label="verduras">
+				<option>Berenjena</option>
+				<option>Lombarda</option>
+				<option>Coliflor</option>
+			  </optgroup>
+			</select>
+		</fieldset>	
+		
+		<br><br>
+			
+		<fieldset>
+		  <legend>Ofreciendo sugerencias con Datalist</legend>
+			<label for="id_misFrutas">¿Cuál fruta te gusta más?</label>
+			<input type="text" name="misFrutas" id="id_misFrutas" list="sugerencias" />
+			<datalist id="sugerencias">
+			  <option>Manzana</option>
+			  <option>Limón</option>
+			  <option>Pera</option>
+			  <option>Arándano</option>
+			  <option>Chirimoya</option>
+			  <option>Naranja</option>
+			  <option>Platano</option>
+			  <option>Melón</option>
+			</datalist>
+		</fieldset>	
+		
+		<br><br>			
+	
+		<fieldset>
+			<legend>Barras de progreso y medidores </legend>
+			<label for="id_progreso">Instalando... </label>
+			<progress max="100" value="44" id="id_progreso">75/100</progress>
+
+			<br><br>
+			<label for="id_velocidad">Velocidad detectada: </label>
+			<meter min="1" max="100" value="76" low="10" high="66" optimum="50" ="id_velocidad">75</meter>
+
+		</fieldset>		
+		
+	</form>
+
+
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- EJEMPLO 2: RECORRIDO POR TODAS LAS ETIQUETAS HTML - parte 1 -->
+
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<meta name="author" content="IES de Rodeira, DAW">
+    <meta name="description" content="Este ejemplo número 2, muestra muchas de las principales etiquetas HTML">
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- Estas no las vamos a utizar para esta explicación,
+	     pero las dejo para que te "suenen"
+		
+	<link rel="icon" type="image/png" href="favicon.png">
+	
+	<link rel="stylesheet" href="estilos3.css" /> 
+	<script src="javascript.js" defer></script>
+	
+	-->
+	
+    <title>..:Ejemplo 02: 3):..</title>
+
+  </head>
+  
+  <body>
+	<h1>EJEMPLO 02: 3)</h1>
+	<h2 style="color: blue">3) Formateo de texto más avanzado:</h2>	
+
+	<br><br>
+	<h3 style="color: grey">a) Citas  </h3>
+	
+	<!-- Citas -->
+	<hr>
+	<p>Aquí hay una cita en bloque:</p>
+	<blockquote cite="index.html">
+	   <p>
+		 El elemento <strong>HTML <code>&lt;blockquote&gt;</code></strong> (o
+		 <em>Elemento de cita de bloque HTML</em>) indica que el texto adjunto es
+		 una cita extendida.
+	   </p>
+	</blockquote>
+
+	<p>
+	  El elemento de cita — <code>&lt;q&gt;</code> — es 
+	   <q cite="index.html"> destinadopara citas cortas que no requieren saltos de párrafo.</q>
+	</p>
+
+	<p>
+		De acuerdo con la 
+		<a href="https://www.edu.xunta.gal/fpadistancia">
+			<cite>página de FP a distancia</cite>
+		</a>:
+	</p>
+	
+	
+	<br><br>
+	<h3 style="color: grey">b) Abreviaturas, detalles de contacto, subíndices y superíndices y código  </h3>
+	<hr>
+	
+	<!-- Abreviaturas -->
+	<p>
+		Usamos <abbr>HTML</abbr>, Hypertext Markup Language, para estructurar 
+		nuestros documentos web.
+	</p>
+	<p>
+	   Creo que el <abbr title="Reverendo">Rev.</abbr> Gutierrez sabe tocar el 
+		acordeón	 
+	</p>
+	
+	
+	<!-- Dirección -->
+	<address>
+	  <p>
+		Pepito de los Palotes<br />
+		Moaña<br />
+		Pontevedra<br />
+		ES
+	  </p>
+
+	  <ul>
+		<li>Tel: 986303030</li>
+		<li>Email: pepito@palotes.mine</li>
+	  </ul>
+	</address>
+	
+	
+	<!-- Superíndices y subíndices -->
+	<p>Mi cumpleaños es el 25<sup>º</sup> de mayo de 2001.</p>
+	<p>La fórmula química de la cafeína es C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>. </p>
+	<p>Si x<sup>2</sup> es 9, x debe ser igual a 3 o -3.</p>
+
+
+	<!-- Código de programación -->
+	<pre><code>const para = document.querySelector('p');
+
+	para.onclick = function() {
+	  alert('Para de tocarme!');
+	}</code></pre>
+
+	<p>
+	  No deberías utilizar elementos de presentación tales como <code>&lt;font&gt;</code> and
+	  <code>&lt;center&gt;</code>.
+	</p>
+
+	<p>
+	  En el ejemplo de encima en Javascript <var>para</var> representa un elemento párrafo.
+	</p>
+
+	<p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+
+	<pre>$ <kbd>ping mozilla.org</kbd>
+	<samp>PING mozilla.org (63.245.215.20): 56 data bytes
+	64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+	
+	
+	<br><br>
+	<h3 style="color: grey">c) Etiquetar horas y fechas para eliminar ambigüedad  </h3>
+	<hr>
+	
+	<!-- Fecha simple estándar -->
+	<p><time datetime="2016-01-20">20 de enero de 2016</time></p>
+	<!-- Solo año y mes -->
+	<p><time datetime="2016-01">enero de 2016</time></p>
+	<!-- Solo mes y día -->
+	<p><time datetime="01-20">20 de enero</time></p>
+	<!-- Solo tiempo, horas y minutos -->
+	<p><time datetime="19:30">19:30</time></p>
+	<!-- ¡También puedes poner segundos y milisegundos! -->
+	<p><time datetime="19:30:01.856">19:30:01.856</time></p>
+	<!-- Fecha y hora -->
+	<p><time datetime="2016-01-20T19:30">7:30 p. m., 20 de enero de 2016</time></p>
+	<!-- Fecha y hora con desplazamiento de zona horaria -->
+	<p><time datetime="2016-01-20T19:30+01:00">
+	   19:30, el 20 de enero de 2016 son las 20:30 en Francia
+	</time></p>
+	<!-- Llamar a un número de semana específico -->
+	<p><time datetime="2016-W04">La cuarta semana de 2016</time></p>
+	
+	
+	
+  </body>
+</html>

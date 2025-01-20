@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<meta name="author" content="IES de Rodeira, DAW">
+    <meta name="description" content="Este ejemplo número 4.15, repartido en varios ejemplos que ilustran el uso de formularios HTML">
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- Estas no las vamos a utizar para esta explicación,
+	     pero las dejo para que te "suenen"
+	<link rel="icon" type="image/png" href="favicon.png">
+	<script src="javascript.js" defer></script>
+	-->
+	
+	<!-- 
+	<link rel="stylesheet" href="estilos15.css" /> 
+	-->
+	
+	
+    <title>..:Ejemplo 04: 15):..</title>
+
+  </head>
+  
+  <body>
+	<h1>EJEMPLO 04: 15) </h1>
+
+	<h2 style="color: green">15) Elementos para estructurar un formulario:</h2>
+
+	<form>
+		<fieldset>
+			<legend>Campo numérico</legend>
+			<p>
+				<label for="id_edad">Edad (5 - 90 años, de 5 en 5):</label>
+				<input type="number" name="edad" id="id_edad" min="5" max="90" step="5" />
+			</p>
+			<p>
+				<label for="id_cambio">Número de céntimos de € (0 - 1):</label>
+				<input type="number" name="cambio" id="id_cambio" min="0" max="1" step="0.01" />
+			</p>			
+			<p>
+			  <button type="submit">¡Enviar ahora!</button>
+			</p>
+		</fieldset>
+	
+		<br><br>
+		<fieldset>
+			<legend>Deslizable (slider)</legend>
+			
+			<label for="id_precio">¿Hasta cuánto está dispuesto a pagar?: </label>
+				<input
+				  type="range"
+				  name="precio"
+				  id="id_precio"
+				  min="50000"
+				  max="100000"
+				  step="100" />		
+		</fieldset>
+
+		<br><br>
+			
+		<fieldset>
+		  <legend>Sección de fecha y hora</legend>
+			<label for="id_miFecha">¿Cuándo puedes estar disponible?</label>
+			<input
+			  type="date"
+			  name="miFecha"
+			  min="2022-09-01"
+			  max="2023-12-31"
+			  step="7"
+			  id="id_miFecha" />
+
+			<label for="id_hora">¿A qué hora?</label>
+			<input type="time" name="hora" id="id_hora" />
+			
+			<label for="id_revision">¿Cuándo te vendría bien la revisión?</label>
+			<input type="datetime-local" name="revision" id="id_revision" />  
+		</fieldset>	
+		
+		<br><br>			
+	
+		<fieldset>
+			<legend>Sección de color</legend>
+			<label for="id_color">¿Qué color te gustaría para la pintura?</label>
+			<input type="color" name="color" id="id_color" />
+		</fieldset>		
+		
+	</form>	
+
+
+  </body>
+</html>

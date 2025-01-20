@@ -1,0 +1,4 @@
+Escribe un programa al que desde línea de comando se le pase como parámetro el
+nombre de un fichero de texto. El programa nos mostrará por cada palabra contenida en el
+fichero el número de veces que aparece. Se mostrarán además ordenadas de mayor a menor
+frecuencia de aparición.

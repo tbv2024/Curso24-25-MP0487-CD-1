@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<!-- EJEMPLO 2: RECORRIDO POR TODAS LAS ETIQUETAS HTML - parte 2  -->
+
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<meta name="author" content="IES de Rodeira, DAW">
+    <meta name="description" content="Este ejemplo número 2, muestra muchas de las principales etiquetas HTML">
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- Estas no las vamos a utizar para esta explicación,
+	     pero las dejo para que te "suenen"
+		
+	<link rel="icon" type="image/png" href="favicon.png">
+	
+	<link rel="stylesheet" href="estilos10.css" /> 
+	<script src="javascript.js" defer></script>
+	
+	-->
+	
+    <title>..:Ejemplo 02: 10):..</title>
+
+  </head>
+  
+  <body>
+	<h1>EJEMPLO 02: 10)</h1>
+	<h2 style="color: dodgerblue">10) Imágenes adaptables (responsive images):</h2>	
+
+	<br><br>
+	<h3>a) Ofrecer la imagen con la mejor resolución:  </h3>
+	<picture>
+	  <source media="(max-width: 799px)" srcset="imagenes/paisaje400.jpg" />
+	  <source media="(max-width: 899px)" srcset="imagenes/paisaje800.jpg" />
+	  <source media="(min-width: 900px)" srcset="imagenes/paisaje.jpg" />
+
+	  <img src="imagenes/paisaje.jpg" alt="Preciosa foto obtenida en pixabay" />
+	</picture>
+
+
+  </body>
+</html>

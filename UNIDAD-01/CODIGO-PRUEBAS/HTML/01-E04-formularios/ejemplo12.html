@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<meta name="author" content="IES de Rodeira, DAW">
+    <meta name="description" content="Este ejemplo número 4.12, repartido en varios ejemplos que ilustran el uso de formularios HTML">
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- Estas no las vamos a utizar para esta explicación,
+	     pero las dejo para que te "suenen"
+	<link rel="icon" type="image/png" href="favicon.png">
+	<script src="javascript.js" defer></script>
+	-->
+	
+	<!-- 
+	<link rel="stylesheet" href="estilos12.css" /> 
+	-->
+	
+	
+    <title>..:Ejemplo 04: 12):..</title>
+
+  </head>
+  
+  <body>
+	<h1>EJEMPLO 04: 12) </h1>
+  	  
+	<h2 style="color: blue">12) Elementos principales de un formulario:</h2>
+
+
+	<form action="procesarFormulario.php" method="post">
+		<ul>
+			<li id="duplicado">
+			  <label for="nombre">Nombre:</label>
+			  <input type="text" id="nombre" name="nombre_usuario" />
+			</li>
+			<li id="duplicado">
+			  <label for="email">Correo electrónico:</label>
+			  <input type="email" id="email" name="email_usuario" />
+			</li>
+			<li id="duplicado">
+			  <label for="mensage">Mensaje:</label>
+			  <textarea id="mensaje" name="mensaje_usuario"></textarea>
+			</li>
+			<li class="boton">
+			  <button type="submit"><em><strong>Enviar mensaje</strong></em></button>
+			</li>
+		</ul>
+	</form>
+	
+
+  </body>
+</html>
